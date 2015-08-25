@@ -1,0 +1,29 @@
+import os
+
+CacheDir('.cache')
+
+def collect(start, ends):
+  sources = []
+  for root, dirs, files in os.walk(start):
+    sources.append( [os.path.join(root,name) for name in files if name.endswith(ends)] )
+  return sources
+
+# Dodatkowe biblioteki
+LibraryOutputDir = "AdditionalLibs"
+env = Environment(CPPPATH=["#/%s"%LibraryOutputDir])
+
+env.Library("%s/Box2D"%LibraryOutputDir, collect("%s/Box2D"%LibraryOutputDir, ".cpp"))
+
+d = env.ParseFlags("-I%s -L%s -lBox2D"%(LibraryOutputDir, LibraryOutputDir))
+
+env.ParseConfig('pkg-config --cflags --libs clanApp-2.1 clanDisplay-2.1 clanCore-2.1 clanGL-2.1 clanGUI-2.1')
+
+env.MergeFlags(d)
+
+# Projekt
+env.Program("IncredibleMachines", Glob(os.path.join('./', '*.cpp')))
+
+env.Append( LIBS = ['boost_unit_test_framework-mt'] )
+
+# Test
+env.Program("IncredibleMachinesTest", [Glob(os.path.join('./', '*.cpp')), Glob(os.path.join('./IMTest', '*.cpp'))])

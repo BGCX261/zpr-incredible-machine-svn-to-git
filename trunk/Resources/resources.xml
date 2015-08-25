@@ -1,0 +1,233 @@
+<resources>
+  <sprite name="ball_sprite">
+    <image file="Image\tennis-ball.png" />
+    <translation origin="center"/>
+    <rotation origin="center"/>
+  </sprite>
+
+  <sprite name="springboard_sprite">
+    <image file="Image\spring_no.png" />
+    <image file="Image\spring_half.png" />
+    <image file="Image\spring_full.png" />
+    <translation origin="center" y="-5"/>
+    <rotation origin="center" y="-5"/>
+    <animation 
+      pingpong="yes" 
+      loop="no" 
+      speed="60"
+      on_finish="first_frame"
+      />
+  </sprite>
+
+  <sprite name="antigravity_sprite">
+    <image file="Image\antigravity_no.png" />
+    <image file="Image\antigravity_bottom.png" />
+    <image file="Image\antigravity_middle.png" />
+    <image file="Image\antigravity_top.png" />
+    <translation origin="center"/>
+    <rotation origin="center"/>
+    <animation
+      pingpong="no"
+      loop="no"
+      speed="100"
+      on_finish="first_frame"
+      />
+  </sprite>
+
+  <sprite name="quaterpipe_sprite">
+    <image file="Image\qpipe.png" />
+    <translation origin="center" x="2" y="2"/>
+    <rotation origin="center" x="2" y="2"/>
+  </sprite>
+
+  <sprite name="pipe_sprite">
+    <image file="Image\pipe.png" />
+    <translation origin="center"/>
+    <rotation origin="center"/>
+  </sprite>
+
+  <sprite name="bucket_sprite">
+    <image file="Image\bucket.png" />
+    <translation origin="center"/>
+    <rotation origin="center"/>
+  </sprite>
+
+  <sprite name="ramp_sprite">
+    <image file="Image\brick.png" />
+    <translation origin="center"/>
+    <rotation origin="center"/>
+  </sprite>
+
+  <sprite name="conveyor_sprite">
+    <image file="Image\conveyor1.png" />
+    <image file="Image\conveyor2.png" />
+    <image file="Image\conveyor3.png" />
+    <image file="Image\conveyor4.png" />
+    <image file="Image\conveyor5.png" />
+    <image file="Image\conveyor6.png" />
+    <image file="Image\conveyor7.png" />
+    <image file="Image\conveyor8.png" />
+    <translation origin="center"/>
+    <rotation origin="center"/>
+    <animation
+      pingpong="no"
+      loop="yes"
+      speed="100"
+      on_finish="first_frame"
+      />
+  </sprite>
+
+
+<!-- ===========Przyciski=========== -->
+
+  <!-- ===========Start=========== -->
+  <sprite name="button_start">
+    <image file="Image\button_start.png" />
+    <translation origin="center"/>
+    <rotation origin="center"/>
+  </sprite>
+
+  <sprite name="button_start_hover">
+    <image file="Image\button_start_hover.png" />
+    <translation origin="center"/>
+    <rotation origin="center"/>
+  </sprite>
+
+  <sprite name="button_start_on">
+    <image file="Image\button_start_on.png" />
+    <translation origin="center"/>
+    <rotation origin="center"/>
+  </sprite>
+
+  <sprite name="button_start_disable">
+    <image file="Image\button_start_disable.png" />
+    <translation origin="center"/>
+    <rotation origin="center"/>
+  </sprite>
+
+  <!-- ===========Stop=========== -->
+  <sprite name="button_stop">
+    <image file="Image\button_stop.png" />
+    <translation origin="center"/>
+    <rotation origin="center"/>
+  </sprite>
+
+  <sprite name="button_stop_hover">
+    <image file="Image\button_stop_hover.png" />
+    <translation origin="center"/>
+    <rotation origin="center"/>
+  </sprite>
+
+  <sprite name="button_stop_on">
+    <image file="Image\button_stop_on.png" />
+    <translation origin="center"/>
+    <rotation origin="center"/>
+  </sprite>
+
+  <sprite name="button_stop_disable">
+    <image file="Image\button_stop_disable.png" />
+    <translation origin="center"/>
+    <rotation origin="center"/>
+  </sprite>
+
+  <!-- ===========Load=========== -->
+  <sprite name="button_load">
+    <image file="Image\button_load.png" />
+    <translation origin="center"/>
+    <rotation origin="center"/>
+  </sprite>
+
+  <sprite name="button_load_hover">
+    <image file="Image\button_load_hover.png" />
+    <translation origin="center"/>
+    <rotation origin="center"/>
+  </sprite>
+
+  <sprite name="button_load_on">
+    <image file="Image\button_load_on.png" />
+    <translation origin="center"/>
+    <rotation origin="center"/>
+  </sprite>
+
+  <sprite name="button_load_disable">
+    <image file="Image\button_load_disable.png" />
+    <translation origin="center"/>
+    <rotation origin="center"/>
+  </sprite>
+
+  <!-- ===========Save=========== -->
+  <sprite name="button_save">
+    <image file="Image\button_save.png" />
+    <translation origin="center"/>
+    <rotation origin="center"/>
+  </sprite>
+
+  <sprite name="button_save_hover">
+    <image file="Image\button_save_hover.png" />
+    <translation origin="center"/>
+    <rotation origin="center"/>
+  </sprite>
+
+  <sprite name="button_save_on">
+    <image file="Image\button_save_on.png" />
+    <translation origin="center"/>
+    <rotation origin="center"/>
+  </sprite>
+
+  <sprite name="button_save_disable">
+    <image file="Image\button_save_disable.png" />
+    <translation origin="center"/>
+    <rotation origin="center"/>
+  </sprite>
+
+  <!-- ===========Plus=========== -->
+  <sprite name="button_plus">
+    <image file="Image\button_plus.png" />
+    <translation origin="center"/>
+    <rotation origin="center"/>
+  </sprite>
+
+  <sprite name="button_plus_hover">
+    <image file="Image\button_plus_hover.png" />
+    <translation origin="center"/>
+    <rotation origin="center"/>
+  </sprite>
+
+  <sprite name="button_plus_on">
+    <image file="Image\button_plus_on.png" />
+    <translation origin="center"/>
+    <rotation origin="center"/>
+  </sprite>
+
+  <sprite name="button_plus_disable">
+    <image file="Image\button_plus.png" />
+    <translation origin="center"/>
+    <rotation origin="center"/>
+  </sprite>
+
+  <!-- ===========Minus=========== -->
+  <sprite name="button_minus">
+    <image file="Image\button_minus.png" />
+    <translation origin="center"/>
+    <rotation origin="center"/>
+  </sprite>
+
+  <sprite name="button_minus_hover">
+    <image file="Image\button_minus_hover.png" />
+    <translation origin="center"/>
+    <rotation origin="center"/>
+  </sprite>
+
+  <sprite name="button_minus_on">
+    <image file="Image\button_minus_on.png" />
+    <translation origin="center"/>
+    <rotation origin="center"/>
+  </sprite>
+
+  <sprite name="button_minus_disable">
+    <image file="Image\button_minus.png" />
+    <translation origin="center"/>
+    <rotation origin="center"/>
+  </sprite>
+  
+</resources>
